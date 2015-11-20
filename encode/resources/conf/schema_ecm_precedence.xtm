@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topicMap xmlns="http://www.topicmaps.org/xtm/" version="2.0">
+	<topic id="ID2063089-topic0">
+		<subjectIdentifier href="http://www.wandora.org/core/roleclass"/>
+		<subjectIdentifier href="http://wandora.org/si/core/role-class"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic3"/>
+			<topicRef href="#ID2063089-topic82"/>
+			<topicRef href="#ID2063089-topic102"/>
+		</instanceOf>
+		<name>
+			<value>Role class</value>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic5"/>
+					<topicRef href="#ID2063089-topic4"/>
+				</scope>
+				<resourceData>Role class</resourceData>
+			</variant>
+		</name>
+		<occurrence>
+			<type>
+				<topicRef href="#ID2063089-topic7"/>
+			</type>
+			<scope>
+				<topicRef href="#ID2063089-topic6"/>
+			</scope>
+			<resourceData>1</resourceData>
+		</occurrence>
+	</topic>
+	<topic id="ID2063089-topic3">
+		<subjectIdentifier href="http://www.wandora.org/core/schema-type"/>
+		<subjectIdentifier href="http://wandora.org/si/core/schema-type"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic0"/>
+			<topicRef href="#ID2063089-topic3"/>
+			<topicRef href="#ID2063089-topic32"/>
+		</instanceOf>
+		<name>
+			<value>Schema type</value>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic5"/>
+					<topicRef href="#ID2063089-topic4"/>
+				</scope>
+				<resourceData>Schema type</resourceData>
+			</variant>
+		</name>
+		<occurrence>
+			<type>
+				<topicRef href="#ID2063089-topic7"/>
+			</type>
+			<scope>
+				<topicRef href="#ID2063089-topic6"/>
+			</scope>
+			<resourceData>1</resourceData>
+		</occurrence>
+	</topic>
+	<topic id="ID2063089-topic4">
+		<subjectIdentifier href="http://www.topicmaps.org/xtm/1.0/core.xtm#display"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic9"/>
+		</instanceOf>
+		<name>
+			<value>Scope Display</value>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic5"/>
+					<topicRef href="#ID2063089-topic4"/>
+				</scope>
+				<resourceData>Display name</resourceData>
+			</variant>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic5">
+		<subjectIdentifier href="http://www.topicmaps.org/xtm/1.0/language.xtm#en"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic12"/>
+		</instanceOf>
+		<name>
+			<value>English language</value>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic4"/>
+					<topicRef href="#ID2063089-topic25"/>
+				</scope>
+				<resourceData>englanti</resourceData>
+			</variant>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic4"/>
+					<topicRef href="#ID2063089-topic23"/>
+				</scope>
+				<resourceData>Englisch</resourceData>
+			</variant>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic4"/>
+					<topicRef href="#ID2063089-topic13"/>
+				</scope>
+				<resourceData>anglais</resourceData>
+			</variant>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic5"/>
+					<topicRef href="#ID2063089-topic4"/>
+				</scope>
+				<resourceData>English</resourceData>
+			</variant>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic4"/>
+					<topicRef href="#ID2063089-topic22"/>
+				</scope>
+				<resourceData>engelska</resourceData>
+			</variant>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic4"/>
+					<topicRef href="#ID2063089-topic24"/>
+				</scope>
+				<resourceData>inglés</resourceData>
+			</variant>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic6">
+		<subjectIdentifier href="http://wandora.org/si/core/lang-independent"/>
+		<subjectIdentifier href="http://www.wandora.org/core/langindependent"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic12"/>
+		</instanceOf>
+		<name>
+			<value>Language independent</value>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic5"/>
+					<topicRef href="#ID2063089-topic4"/>
+				</scope>
+				<resourceData>Language independent</resourceData>
+			</variant>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic7">
+		<subjectIdentifier href="http://wandora.org/si/core/hidelevel"/>
+		<subjectIdentifier href="http://wandora.org/si/core/hide-level"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic146"/>
+		</instanceOf>
+		<name>
+			<value>Hide level</value>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic5"/>
+					<topicRef href="#ID2063089-topic4"/>
+				</scope>
+				<resourceData>Hide level</resourceData>
+			</variant>
+		</name>
+		<occurrence>
+			<type>
+				<topicRef href="#ID2063089-topic7"/>
+			</type>
+			<scope>
+				<topicRef href="#ID2063089-topic6"/>
+			</scope>
+			<resourceData>1</resourceData>
+		</occurrence>
+	</topic>
+	<topic id="ID2063089-topic9">
+		<subjectIdentifier href="http://wandora.org/si/core/variant-name-version"/>
+		<subjectIdentifier href="http://www.wandora.org/core/variant-name-version"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic3"/>
+		</instanceOf>
+		<name>
+			<value>Wandora variant name version</value>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic5"/>
+					<topicRef href="#ID2063089-topic4"/>
+				</scope>
+				<resourceData>Wandora variant name version</resourceData>
+			</variant>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic11">
+		<subjectIdentifier href="http://www.topicmaps.org/xtm/1.0/language.xtm#it"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic12"/>
+		</instanceOf>
+		<name>
+			<value>Italian language</value>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic4"/>
+					<topicRef href="#ID2063089-topic13"/>
+				</scope>
+				<resourceData>italiano</resourceData>
+			</variant>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic4"/>
+					<topicRef href="#ID2063089-topic11"/>
+				</scope>
+				<resourceData>italian</resourceData>
+			</variant>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic12">
+		<subjectIdentifier href="http://www.topicmaps.org/xtm/1.0/language.xtm"/>
+		<subjectIdentifier href="http://wandora.org/si/core/language"/>
+		<subjectIdentifier href="http://www.wandora.org/core/language"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic3"/>
+		</instanceOf>
+		<name>
+			<value>Wandora language</value>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic5"/>
+					<topicRef href="#ID2063089-topic4"/>
+				</scope>
+				<resourceData>Wandora language</resourceData>
+			</variant>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic13">
+		<subjectIdentifier href="http://wandora.org/si/xtm2/temp/#topic84254"/>
+	</topic>
+	<topic id="ID2063089-topic14">
+		<subjectIdentifier href="http://wandora.org/si/core/default-occurrence"/>
+		<subjectIdentifier href="http://www.wandora.org/core/default-occurrence"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic146"/>
+		</instanceOf>
+		<name>
+			<value>Default occurrence</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic16">
+		<subjectIdentifier href="http://www.topicmaps.org/xtm/1.0/core.xtm#sort"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic9"/>
+		</instanceOf>
+		<name>
+			<value>Scope Sort</value>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic5"/>
+					<topicRef href="#ID2063089-topic4"/>
+				</scope>
+				<resourceData>Sort name</resourceData>
+			</variant>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic17">
+		<subjectIdentifier href="http://www.r-project.org"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic146"/>
+		</instanceOf>
+		<name>
+			<value>R language type</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic18">
+		<subjectIdentifier href="http://www.topicmaps.org/xtm/1.0/core.xtm#superclass"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic102"/>
+		</instanceOf>
+		<name>
+			<value>Superclass</value>
+		</name>
+		<occurrence>
+			<type>
+				<topicRef href="#ID2063089-topic7"/>
+			</type>
+			<scope>
+				<topicRef href="#ID2063089-topic6"/>
+			</scope>
+			<resourceData>1</resourceData>
+		</occurrence>
+	</topic>
+	<topic id="ID2063089-topic19">
+		<subjectIdentifier href="http://www.topicmaps.org/xtm/1.0/core.xtm#subclass"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic102"/>
+		</instanceOf>
+		<name>
+			<value>Subclass</value>
+		</name>
+		<occurrence>
+			<type>
+				<topicRef href="#ID2063089-topic7"/>
+			</type>
+			<scope>
+				<topicRef href="#ID2063089-topic6"/>
+			</scope>
+			<resourceData>1</resourceData>
+		</occurrence>
+	</topic>
+	<topic id="ID2063089-topic20">
+		<subjectIdentifier href="http://wandora.org/si/core/default-role-2"/>
+		<subjectIdentifier href="http://www.wandora.org/core/default-role-2"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic102"/>
+		</instanceOf>
+		<name>
+			<value>Default role 2</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic21">
+		<subjectIdentifier href="http://wandora.org/si/core/edittime"/>
+		<subjectIdentifier href="http://www.wandora.org/core/edittime"/>
+		<name>
+			<value>Topic edit time</value>
+		</name>
+		<occurrence>
+			<type>
+				<topicRef href="#ID2063089-topic7"/>
+			</type>
+			<scope>
+				<topicRef href="#ID2063089-topic6"/>
+			</scope>
+			<resourceData>1</resourceData>
+		</occurrence>
+	</topic>
+	<topic id="ID2063089-topic22">
+		<subjectIdentifier href="http://wandora.org/si/xtm2/temp/#topic84249"/>
+	</topic>
+	<topic id="ID2063089-topic23">
+		<subjectIdentifier href="http://wandora.org/si/xtm2/temp/#topic84260"/>
+	</topic>
+	<topic id="ID2063089-topic24">
+		<subjectIdentifier href="http://wandora.org/si/xtm2/temp/#topic84259"/>
+	</topic>
+	<topic id="ID2063089-topic25">
+		<subjectIdentifier href="http://wandora.org/si/xtm2/temp/#topic84241"/>
+	</topic>
+	<topic id="ID2063089-topic26">
+		<subjectIdentifier href="http://processing.org"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic146"/>
+		</instanceOf>
+		<name>
+			<value>Processing type</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic27">
+		<subjectIdentifier href="http://www.wandora.org/core/default-association"/>
+		<subjectIdentifier href="http://wandora.org/si/core/default-association"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic82"/>
+		</instanceOf>
+		<name>
+			<value>Default association</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic28">
+		<subjectIdentifier href="http://wandora.org/si/core/default-role-1"/>
+		<subjectIdentifier href="http://www.wandora.org/core/default-role-1"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic102"/>
+		</instanceOf>
+		<name>
+			<value>Default role 1</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic29">
+		<subjectIdentifier href="http://www.topicmaps.org/xtm/1.0/core.xtm#superclass-subclass"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic82"/>
+		</instanceOf>
+		<name>
+			<value>Superclass-Subclass</value>
+		</name>
+		<occurrence>
+			<type>
+				<topicRef href="#ID2063089-topic7"/>
+			</type>
+			<scope>
+				<topicRef href="#ID2063089-topic6"/>
+			</scope>
+			<resourceData>1</resourceData>
+		</occurrence>
+	</topic>
+	<topic id="ID2063089-topic30">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431530618786-0"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic32"/>
+			<topicRef href="#ID2063089-topic34"/>
+		</instanceOf>
+		<name>
+			<value>Primary Notion</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic32">
+		<subjectIdentifier href="http://wandora.org/si/core/content-type"/>
+		<subjectIdentifier href="http://www.wandora.org/core/contenttype"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic32"/>
+			<topicRef href="#ID2063089-topic3"/>
+			<topicRef href="#ID2063089-topic102"/>
+		</instanceOf>
+		<name>
+			<value>Content type</value>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic5"/>
+					<topicRef href="#ID2063089-topic4"/>
+				</scope>
+				<resourceData>Content type</resourceData>
+			</variant>
+		</name>
+		<occurrence>
+			<type>
+				<topicRef href="#ID2063089-topic7"/>
+			</type>
+			<scope>
+				<topicRef href="#ID2063089-topic6"/>
+			</scope>
+			<resourceData>1</resourceData>
+		</occurrence>
+	</topic>
+	<topic id="ID2063089-topic34">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431530760497-2"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic54"/>
+		</instanceOf>
+		<name>
+			<value>schema ECM</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic54">
+		<subjectIdentifier href="http://www.wandora.org/core/wandoraclass"/>
+		<subjectIdentifier href="http://wandora.org/si/core/wandora-class"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic3"/>
+		</instanceOf>
+		<name>
+			<value>Wandora class</value>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic5"/>
+					<topicRef href="#ID2063089-topic4"/>
+				</scope>
+				<resourceData>Wandora class</resourceData>
+			</variant>
+		</name>
+		<occurrence>
+			<type>
+				<topicRef href="#ID2063089-topic7"/>
+			</type>
+			<scope>
+				<topicRef href="#ID2063089-topic6"/>
+			</scope>
+			<resourceData>1</resourceData>
+		</occurrence>
+	</topic>
+	<topic id="ID2063089-topic78">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431530641285-1"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic32"/>
+			<topicRef href="#ID2063089-topic34"/>
+		</instanceOf>
+		<name>
+			<value>Secondary Notion</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic80">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431530836608-3"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic82"/>
+		</instanceOf>
+		<name>
+			<value>is_req</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic82">
+		<subjectIdentifier href="http://wandora.org/si/core/association-type"/>
+		<subjectIdentifier href="http://www.wandora.org/core/associationtype"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic82"/>
+			<topicRef href="#ID2063089-topic3"/>
+			<topicRef href="#ID2063089-topic32"/>
+			<topicRef href="#ID2063089-topic102"/>
+		</instanceOf>
+		<name>
+			<value>Association type</value>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic5"/>
+					<topicRef href="#ID2063089-topic4"/>
+				</scope>
+				<resourceData>Association type</resourceData>
+			</variant>
+		</name>
+		<occurrence>
+			<type>
+				<topicRef href="#ID2063089-topic7"/>
+			</type>
+			<scope>
+				<topicRef href="#ID2063089-topic6"/>
+			</scope>
+			<resourceData>1</resourceData>
+		</occurrence>
+	</topic>
+	<topic id="ID2063089-topic102">
+		<subjectIdentifier href="http://wandora.org/si/core/role"/>
+		<subjectIdentifier href="http://www.wandora.org/core/role"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic102"/>
+			<topicRef href="#ID2063089-topic3"/>
+			<topicRef href="#ID2063089-topic32"/>
+			<topicRef href="#ID2063089-topic82"/>
+		</instanceOf>
+		<name>
+			<value>Role</value>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic5"/>
+					<topicRef href="#ID2063089-topic4"/>
+				</scope>
+				<resourceData>Role</resourceData>
+			</variant>
+		</name>
+		<occurrence>
+			<type>
+				<topicRef href="#ID2063089-topic7"/>
+			</type>
+			<scope>
+				<topicRef href="#ID2063089-topic6"/>
+			</scope>
+			<resourceData>1</resourceData>
+		</occurrence>
+	</topic>
+	<topic id="ID2063089-topic122">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431531313654-4"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic102"/>
+		</instanceOf>
+		<name>
+			<value>prerequisite</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic124">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431531325063-5"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic102"/>
+		</instanceOf>
+		<name>
+			<value>subsidiary</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic126">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431595626821-0"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic82"/>
+		</instanceOf>
+		<name>
+			<value>is_item</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic128">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431595724473-1"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic82"/>
+		</instanceOf>
+		<name>
+			<value>is_sug</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic130">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431595780606-2"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic82"/>
+		</instanceOf>
+		<name>
+			<value>is_rel</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic132">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431596118998-3"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic102"/>
+		</instanceOf>
+		<name>
+			<value>general</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic134">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431596128272-4"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic102"/>
+		</instanceOf>
+		<name>
+			<value>individuals</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic136">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431596137842-5"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic102"/>
+		</instanceOf>
+		<name>
+			<value>linked 1</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic138">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431596147006-6"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic102"/>
+		</instanceOf>
+		<name>
+			<value>linked 2</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic140">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431596155024-7"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic102"/>
+		</instanceOf>
+		<name>
+			<value>main</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic142">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431596163240-8"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic102"/>
+		</instanceOf>
+		<name>
+			<value>deepening</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic144">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431598103694-9"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic146"/>
+		</instanceOf>
+		<name>
+			<value>Prerequisite</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic146">
+		<subjectIdentifier href="http://wandora.org/si/core/occurrence-type"/>
+		<subjectIdentifier href="http://www.wandora.org/core/occurrencetype"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic3"/>
+			<topicRef href="#ID2063089-topic32"/>
+			<topicRef href="#ID2063089-topic82"/>
+			<topicRef href="#ID2063089-topic102"/>
+		</instanceOf>
+		<name>
+			<value>Occurrence type</value>
+			<variant>
+				<scope>
+					<topicRef href="#ID2063089-topic5"/>
+					<topicRef href="#ID2063089-topic4"/>
+				</scope>
+				<resourceData>Occurrence type</resourceData>
+			</variant>
+		</name>
+		<occurrence>
+			<type>
+				<topicRef href="#ID2063089-topic7"/>
+			</type>
+			<scope>
+				<topicRef href="#ID2063089-topic6"/>
+			</scope>
+			<resourceData>1</resourceData>
+		</occurrence>
+	</topic>
+	<topic id="ID2063089-topic166">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431598140689-10"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic146"/>
+		</instanceOf>
+		<name>
+			<value>Learning Outcome</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic168">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431598179228-11"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic146"/>
+		</instanceOf>
+		<name>
+			<value>Awareness</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic170">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431598192932-12"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic146"/>
+		</instanceOf>
+		<name>
+			<value>Understanding</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic172">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431598203078-13"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic146"/>
+		</instanceOf>
+		<name>
+			<value>Innovation</value>
+		</name>
+	</topic>
+	<topic id="ID2063089-topic174">
+		<subjectIdentifier href="http://wandora.org/si/temp/1431532670067-8"/>
+	</topic>
+	<topic id="ID2063089-topic176">
+		<subjectIdentifier href="http://wandora.org/si/temp/1446895698167-0"/>
+		<instanceOf>
+			<topicRef href="#ID2063089-topic82"/>
+		</instanceOf>
+		<name>
+			<value>precedence</value>
+		</name>
+	</topic>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic82"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic102"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic0"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic102"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic0"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic0"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic0"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic0"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic18"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic0"/>
+			</type>
+			<topicRef href="#ID2063089-topic3"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic82"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic3"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic29"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic0"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic19"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic0"/>
+			</type>
+			<topicRef href="#ID2063089-topic3"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic146"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic146"/>
+			</type>
+			<topicRef href="#ID2063089-topic7"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic3"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic29"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic19"/>
+			</type>
+			<topicRef href="#ID2063089-topic3"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic18"/>
+			</type>
+			<topicRef href="#ID2063089-topic54"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic18"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic29"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic19"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic29"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic20"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic176"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic28"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic176"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic80"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic122"/>
+			</type>
+			<topicRef href="#ID2063089-topic30"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic124"/>
+			</type>
+			<topicRef href="#ID2063089-topic78"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic82"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic30"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic80"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic82"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic30"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic128"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic82"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic30"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic130"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic32"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic146"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic82"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic32"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic146"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic32"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic82"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic82"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic32"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic82"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic146"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic146"/>
+			</type>
+			<topicRef href="#ID2063089-topic144"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic78"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic146"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic146"/>
+			</type>
+			<topicRef href="#ID2063089-topic170"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic78"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic80"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic122"/>
+			</type>
+			<topicRef href="#ID2063089-topic78"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic124"/>
+			</type>
+			<topicRef href="#ID2063089-topic78"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic146"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic146"/>
+			</type>
+			<topicRef href="#ID2063089-topic172"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic78"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic82"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic78"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic130"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic82"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic78"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic80"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic82"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic78"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic128"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic146"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic146"/>
+			</type>
+			<topicRef href="#ID2063089-topic168"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic78"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic82"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic78"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic126"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic146"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic146"/>
+			</type>
+			<topicRef href="#ID2063089-topic166"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic78"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic124"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic80"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic122"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic80"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic82"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic82"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic82"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic32"/>
+			</type>
+			<topicRef href="#ID2063089-topic82"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic102"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic82"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic102"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic102"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic102"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic132"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic126"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic134"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic126"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic142"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic128"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic140"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic128"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic138"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic130"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic130"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic138"/>
+		</role>
+	</association>
+	<association>
+		<type>
+			<topicRef href="#ID2063089-topic102"/>
+		</type>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic102"/>
+			</type>
+			<topicRef href="#ID2063089-topic146"/>
+		</role>
+		<role>
+			<type>
+				<topicRef href="#ID2063089-topic82"/>
+			</type>
+			<topicRef href="#ID2063089-topic146"/>
+		</role>
+	</association>
+</topicMap>
