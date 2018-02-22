@@ -113,8 +113,6 @@ public class LearningPaths extends AbstractWandoraTool implements WandoraTool{
         
         wandora.clipboardtm.clearTopicMapIndexes();
         TopicMap topicmap = solveContextTopicMap(wandora, context);
-        /*Hashtable<Locator, Topic> subjectIdentifierIndex = ((TopicMapImpl)topicmap).getSubjectIdentifierIndex();
-        Hashtable<String, Topic> nameIndex = ((TopicMapImpl)topicmap).getNameIndex();*/
         GenericOptionsDialog god=new GenericOptionsDialog(wandora,
             "Lesson Plan Generator",
             "Finds a suitable learning paths through the map, from the " +
@@ -145,9 +143,6 @@ public class LearningPaths extends AbstractWandoraTool implements WandoraTool{
             role_prerequisite = topicmap.getTopic("http://www.eiffe-l.org/encode/si/core/prerequisite");
             role_subsidiary = topicmap.getTopic("http://www.eiffe-l.org/encode/si/core/subsidiary");
             aPrecedence = topicmap.getTopic("http://www.eiffe-l.org/encode/si/core/lesson-plan/precedence");
-                     //wandora.getTopicMap().getLayer(basenameLP).getContainer()
-                    //topicmap.getTopic("http://www.eiffe-l.org/encode/si/core/lesson-plan/precedence");
-           
            /*Pruning the map keeping only the topics that have a path to LO*/
             this.topicsPruned.add(learningOutcome);
             pruning(learningOutcome);
@@ -219,15 +214,10 @@ public class LearningPaths extends AbstractWandoraTool implements WandoraTool{
                 
                 if(indegree.get(s)==0){
                     Topic zeroT = topicmap.getTopicWithBaseName(s);
-                    /* Topic zeroT = inputDAG.get(j).getFirst(); 
-                    mi ritorna il primo elemento della lista dei
-                    topic connessi col topic base che a me serve */
                     queueIn.add(zeroT);
                     System.out.println("queueIn Add = " +zeroT.getBaseName());
                 }
             }
-        
-            
             /**
              * Finds one topo order
             **/
@@ -267,13 +257,7 @@ public class LearningPaths extends AbstractWandoraTool implements WandoraTool{
             queueOut.stream().forEach((t) -> {
                 lessonplan.add(t);
             });
-            /*Iterator<Topic> lessonIter = lessonplan.listIterator();
-            while(lessonIter.hasNext()){
-                
-                topoMap.copyTopicIn(lessonIter.next(), true);
-                
-            }*/
-            
+           
             /**
              * Find longhest path 
              */
@@ -313,10 +297,9 @@ public class LearningPaths extends AbstractWandoraTool implements WandoraTool{
             int y=0;
             List<GenericTreeNode<List<Locator>>> children = new ArrayList<GenericTreeNode<List<Locator>>>();
             /**
-             * Creazione del albero quale traversamento root-leaf rapresenta i possibili ordinamenti:
-             * Per ogni livello trovare prima tutte le possibili permutazioni e il set di nodi leaf 
-             * (inizialmente = root), per ogni leaf aggiungere come child ogniuna delle permutazioni
-             * dalla lista di liste
+             * Creation of the tree in wich every root-leaf path represents a possible ordering
+             * For every level, first find all the possible permutations and the set of leaf nodes
+             * For every leaf add as child each one of the permutation from the list of lists
              */
             for(int z=1; z<levelTopics.size(); z++){
                 ArrayList<Locator> l = levelTopics.get(z);
@@ -374,36 +357,6 @@ public class LearningPaths extends AbstractWandoraTool implements WandoraTool{
                     }    
                 }  log("Ordinamento "+z+": " + nome);
             }
-            /**
-             * Creates new Layer for the Lesson Plan 
-             */
-            
-           
-            /**
-            * A new layer and a precedence association is created in order to connect the topics in a topological order inside 
-            * the lesson plan layer
-            
-            createNewLayer(topoMap, basenameLP, wandora);
-            
-            Iterator<Topic> lessonIter2 = lessonplan.listIterator();
-            while(lessonIter2.hasNext()){
-                a = wandora.getTopicMap().getLayer(basenameLP).getContainer().createAssociation(aPrecedence);
-                Topic tOrderNext = lessonIter2.next();
-                t_next =  wandora.getTopicMap().getLayer(basenameLP).getTopicMap().getTopicWithBaseName(tOrderNext.getBaseName());       
-                if(t_prev!=null){ 
-                            Topic t_prevL =  wandora.getTopicMap().getLayer(basenameLP).getContainer().getTopicWithBaseName(t_prev.getBaseName());
-                            Topic t_nextL =  wandora.getTopicMap().getLayer(basenameLP).getContainer().getTopicWithBaseName(t_next.getBaseName());
-                          
-                            a.addPlayer(t_prevL, default_role_1);
-                            a.addPlayer(t_nextL, default_role_2);
-                        }
-                        else {
-                            t_first = lessonplan.getFirst();
-                            t_prev = t_first;       
-                        }
-                        t_prev =  t_next;     
-            } 
-            */
                
         }
         catch(Exception e) {
@@ -471,7 +424,7 @@ private HashMap<String, Integer> newInDegree (){
                         Logger.getLogger(LearningPaths.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
-                //return queueOut;
+             
             } else if (remainingT.isEmpty() && (queueOut.size() < adjList.size())) {
                 System.out.println("Topological partial solution: ");
                 for (Topic t : queueOut) {
@@ -482,11 +435,9 @@ private HashMap<String, Integer> newInDegree (){
                     }
 
                 }
-                //return queueOut;
+                
             }
-            /*else if(!remainingT.isEmpty()){
-             System.out.println("Cycle!!!!");
-             }*/
+           
         } else {
             for (Topic dequeue : queueIn) {
                 queueInN = new LinkedList<Topic>();
@@ -512,7 +463,7 @@ private HashMap<String, Integer> newInDegree (){
                 try {
                     queueInN.remove(dequeue);
                     System.out.println("queueOut Add = " + dequeue.getBaseName());
-                    if (adjList.get(dequeue.getBaseName()) != null) { // se ho vicini al nodo dequeue
+                    if (adjList.get(dequeue.getBaseName()) != null) { 
                         for (Topic t : adjList.get(dequeue.getBaseName())) {
                             String tName = t.getBaseName();
                             int x = indegreeN.get(tName).intValue();
@@ -568,13 +519,7 @@ private HashMap<String, Integer> newInDegree (){
                 
             }
         }
-        /*
-        lessonplanT = getOrCreateTopic(wandora.getTopicMap(), "http://www.eiffe-l.org/encode/si/".concat(basenameLP), basenameLP);
-        if (lessonplanT != null) {
-
-            makeSubclassOfWandoraClass(lessonplanT, wandora.getTopicMap());
-        }
-        */
+ 
 
     }
     public void makeSubclassOfWandoraClass(Topic t, TopicMap tm) throws TopicMapException {
@@ -635,11 +580,11 @@ private HashMap<String, Integer> newInDegree (){
               Locator keyP = p.getFirstSubjectIdentifier(); 
               maxPredecessors  = Math.max(maxPredecessors , level.get(keyP));
             }
-            //maxPredecessors = Collections.max(predecessors);
+   
             Locator keyT = topic.getFirstSubjectIdentifier();
             level.put(keyT, maxPredecessors+1);    
         } 
-       // return levelmax;
+   
     }
     
 }
