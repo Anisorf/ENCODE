@@ -1,72 +1,64 @@
-#set( $wandoraClass = $topic.getTopicMap().getTopic("http://wandora.org/si/core/wandora-class") )##
-#set( $ctopic = $topic )##
-<!DOCTYPE HTML>
-<html >
+##set( $wandoraClass = $topic.getTopicMap().getTopic("http://wandora.org/si/core/wandora-class") )##
+##set( $ctopic = $topic )##
+<!-- <!DOCTYPE HTML> -->
+<html xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- *********************************************************************** -->
-<!-- ****              WANDORA EMBEDDED HTTP SERVER TEMPLATE            **** -->
-<!-- ****             (c) 2012 by Eero Lehtonen/Wandora Team            **** -->
+<!-- ****              Encode EMBEDDED HTTP SERVER TEMPLATE             **** -->
+<!-- ****             (c) 2012 Wandora Team                             **** -->
+<!-- ****             (c) 2015 Frosina Koceva                           **** -->
 <!-- *********************************************************************** -->
 
-    <HEAD >
-        <title>Wandora D3 Graph</title>
+    <HEAD>
+        <title>Encode D3 Graph</title>
+        <link rel="StyleSheet" href="${staticbase}js/ui/1.11.0/themes/smoothness/jquery-ui.css" type="text/css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type='text/javascript' src="${staticbase}js/ui/1.11.0/jquery-ui.min.js"> </script>
         <script src="${staticbase}js/d3/d3.min.js"></script>
         <script src="${staticbase}js/render.js"></script>
+     <!--   <script src="http://d3js.org/d3.v3.js"></script> -->
         <link rel="StyleSheet" href="${staticbase}style.css" type="text/css" media="screen">
     </HEAD>
     <body>
       <div id="mainContent">
         <div id="chart"></div>
-        <div class="footer">
-          <div class="header">
-           <h1 class="heading">D3 Graph</h1>
-           <button class="info-toggle"></button>
-          </div>
-          <div class="description">
-            <p>
-              Only the first 1000 topics and those associations with both 
-              players available are displayed. You can adjust the amount of
-              topics loaded with the URL parameter "n". Nodes can be 
-              dragged and the view may be panned and zoomed using the mouse.
-            </p>
-            <div id="info">
-              <table class="legend">
-                <tr class="title">
-                  <td colspan="2">Edge colors</td>
-                </tr>
-                <tr>
-                  <th align="left">Association type</th>
-                  <th align="left">color</th>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-      <script>
+<script>
             draw(
 #set( $topicMap = $topic.getTopicMap() )
-## -------------------------------------------------------
+## ------------------------------------------------------- 
 #if( !$request.getParameter("draw_all_topics") )##
 #**##set( $topics  = $listmaker.make() )##
 #* *### -------------- Collect association player topics
-#* *##foreach( $association in $topicMap.getAssociations() )##
-#*  *##foreach( $role in $association.getRoles() )##
-#*   *##if( !$topics.contains( $association.getPlayer( $role ) ) )##
-#*    *##set( $temp = $topics.add( $association.getPlayer( $role ) ) )##
-#*   *##end##
-#*  *##end##
-#* *##end##
+#* *###foreach( $association in $topicMap.getAssociations() )##
+#*  *###foreach( $role in $association.getRoles() )##
+#*   *###if( !$topics.contains( $association.getPlayer( $role ) ) )##
+#*    *###set( $temp = $topics.add( $association.getPlayer( $role ) ) )##
+#*   *###end##
+#*  *###end##
+#* *###end##
 #* *### --------------- Collect type and instance topics
+#set( $colorMap_topic = $mapmaker.make() )
+#set($color_nodes = ["yellowgreen","skyblue"])
 #* *##foreach( $topic in $topicMap.getTopics() )##
 #*  *##foreach( $type in $topic.getTypes() )##
-#*   *##if( !$topics.contains( $type ) )##
-#*    *##set( $temp = $topics.add( $type ) )##
-#*   *##end##
-#*   *##foreach( $instance in $topicMap.getTopicsOfType( $type ) )##
-#*    *##if( !$topics.contains( $instance ) )##
-#*     *##set( $temp = $topics.add( $instance ) )##
-#*    *##end##
-#*   *##end##
+#*    *##if( !$topics.contains( $type ) )##
+#*Frosina*##set( $topicpn = $topic.getTopicMap().getTopic("http://www.eiffe-l.org/encode/si/core/primary_notion") )##
+#*Frosina*##set( $topicsn = $topic.getTopicMap().getTopic("http://www.eiffe-l.org/encode/si/core/secondary_notion") )##
+#*Frosina*##set( $topicName = "$topic.getOneSubjectIdentifier().toExternalForm()" )##
+#*Frosina*##if( $topic.isOfType( $topicpn ) || $topic.isOfType( $topicsn ) )##
+#*           *##foreach( $instance in $topicMap.getTopicsOfType( $type ) )##
+#*             *##if( !$topics.contains( $instance ) )##
+#*                *##set( $temp = $topics.add( $instance ) )##
+#*             *##end##
+                 #if($topic.isOfType( $topicpn ))
+                   #set($temp_color = $colorMap_topic.put($instance,$color_nodes.get(0)))
+                 #elseif($topic.isOfType( $topicsn ))
+                   #set($temp_color = $colorMap_topic.put($instance,$color_nodes.get(1)))
+                
+#*                *#
+#*             *##end##
+#*           *##end##
+#*Frosina*##end##
+#*  *##end##
 #*  *##end##
 #* *##end##
 #else##
@@ -84,6 +76,20 @@
   #set( $n = $request.getParameter("n"))
 #end
 
+#* PN and SN with different colors (its not working) *#
+#*
+#set( $colorMap_topic = $mapmaker.make() )
+#set($topic_typeList=$listmaker.make() )
+#set($color_nodes = ["YellowGreen","SteelBlue"])
+#foreach($instance in $topicMap.getTopicsOfType( $topicpn ))
+  #set($temp = $topic_typeList.add($topicpn))
+  #set($temp = $colorMap_topic.put($instance,$color_nodes.get(0)))
+#end
+#foreach($instance in $topicMap.getTopicsOfType( $topicsn ))
+  #set($temp = $topic_typeList.add($topicsn))
+  #set($temp = $colorMap_topic.put($instance,$color_nodes.get(1)))
+#end
+*#
 #set ($associations = $topicMap.getAssociations() )
 #set( $assocTypeList = $listmaker.make() )
 #foreach($association in $associations )
@@ -122,7 +128,9 @@
 #*   *##set($temp = $topicHashMap.put( $topic.getID(), $i ) )
 #*   *#{ 
 #*     *#"name" : "$urlencoder.encode($topicName)",
-#*     *#"id" : "node$i"
+#*     *#"id" : "node$i",
+#*     *#"url" : "/topic/?topic=$urlencoder.encode($topic.getFirstSubjectIdentifier().toExternalForm())",
+#*     *#"color" : "$colorMap_topic.get($topic)"
 #*   *#}
 #*   *##set($i = $i + 1)
 #*   *##set($temp = $ntopics.add($topic))
@@ -131,7 +139,7 @@
 #*   *##end
 #* *##end
 ]
-,"links":[
+,"links" : [
 #* *##set( $i = 0 )
 #* *##set( $topics = $topicMap.getTopics() )
 #* *##set( $doneAssocs = $listmaker.make() )
@@ -139,8 +147,9 @@
 #*   *##set( $assocs = $topic.getAssociations() )
 #*   *##foreach( $assoc in $assocs )
 #*     *##set($roles = $assoc.getRoles())
+#*     *##set($roles = $tmbox.sortTopics($roles,null) )
 #*     *##if(!$doneAssocs.contains($assoc) && $roles.toArray().size() >= 2)
-#*       *##set($roles = $tmbox.sortTopics($roles,null) )
+#*       *####set($roles = $tmbox.sortTopics($roles,null) )
 #*       *##if($topicHashMap.get($assoc.getPlayer($roles.toArray().get(0)).getID()) && $topicHashMap.get($assoc.getPlayer($roles.toArray().get(1)).getID()))
 #*         *##if( $i != 0)
 #*           *#,
@@ -162,52 +171,71 @@
 #*       *##end
 #*     *##end
 #*   *##end
-#* *##end
-#* *##if($topicMap.getTopics().size > 0 && $doneAssocs.size() > 0)
-#*   *#,
-#* *##end
-#* *##set( $ntopics = $listmaker.make() )
-#* *##set( $j = 0)
-#* *##foreach ( $topic in $topics )
-#*   *##set($temp = $ntopics.add($topic))
-#*   *##set( $j = $j + 1)
-#*   *##if($j == $n)
-#*     *##break
-#*   *##end
-#* *##end
-#* *##foreach( $topic in $ntopics )
-#*   *##set( $types = $topic.getTypes() )
-#*   *##foreach( $type in $types )
-#*     *##if($topicHashMap.get($type.getID()) && $topicHashMap.get($topic.getID()))
-#*       *##if($i > 0)
-#*         *#,
-#*       *##end
-#*       *#{
-#*         *#"source" : $topicHashMap.get($type.getID()),
-#*         *#"target" : $topicHashMap.get($topic.getID()),
-#*         *#"class" : "type", 
-#*         *#"id" : "link$i"
-#*       *#}
-#*       *##set($i = $i + 1)
-#*     *##end
-#*   *##end
-#* *##end
-]
+#* *##end]
 }
 );
 
+#*
 #foreach($type in $assocTypeList)
   #set($color = $colorMap.get($type))
   var legend = d3.select(".legend")[0][0];
   var row = legend.insertRow(legend.rows.length);
   var aTypeCell = row.insertCell(0);
-  aTypeCell.innerHTML = "$type.getBaseName()";
+  aTypeCell.innerHTML = "<font color=$color>$type.getBaseName()</font>";
   var colorCell = row.insertCell(1);
   colorCell.innerHTML = "$color";
+  colorCell.style.backgroundColor = "$color";
 #end
-
-
-
+*#
+#*
+  #set($color = $colorMap_topic.get($type_topic))
+  #set( $topicpn = $topic.getTopicMap().getTopic("http://www.eiffe-l.org/encode/si/core/primary_notion") )
+  #set( $topicsn = $topic.getTopicMap().getTopic("http://www.eiffe-l.org/encode/si/core/secondary_notion") )
+  #set( $topicName = "$topic.getOneSubjectIdentifier().toExternalForm()" )   
+      var legend = d3.select(".legend")[0][0];
+      var rowPN = legend.insertRow(legend.rows.length);
+      var aPNCell = row.insertCell(0);
+      var aSNCell = row.insertCell(1);
+      aPNCell.innerHTML = "<font color=$color>$topicpn.getBaseName()</font>";
+      aSNCell.innerHTML = "<font color=$color>$topicsn.getBaseName()</font>";
+      var colorCell = rowPN.insertCell(1);
+      var colorCell = rowSN.insertCell(1);
+      colorCell.innerHTML = "$color";
+      colorCell.style.backgroundColor = "$color";
+*#
       </script>
+       <div class="footer">
+          <div class="header">
+           <h1 class="heading">Educational Concept Map</h1>
+<div class="ui-widget">
+   <input id="search" onfocus="autocompleteTopics()">
+    <button type="button" onclick="searchNode()">Search</button>
+</div>
+           <button class="info-toggle"></button>
+          </div>
+          <div class="description">
+            <p>
+              Only the first 1000 topics and those associations with both 
+              players available are displayed. You can adjust the amount of
+              topics loaded with the URL parameter "n". Nodes can be 
+              dragged and the view may be panned and zoomed using the mouse.
+            </p>
+            <div id="info">
+              <table class="legend">
+                <tr class="title">
+                  <td colspan="2">Edge colors</td>
+                </tr>
+                <tr>
+                  <th align="left">Association type</th>
+                  <th align="left">color</th>
+                </tr>
+              </table>
+
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      
   </body>
 </html>
