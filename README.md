@@ -5,4 +5,4 @@ It assists the teacher for the design of lessons and/or learning paths, which gu
 
 Encode is based on the Educational Concept Map model that defines a formal representation of the subject matter. 
 
-Developed in the ELKM(E-Learning Knowledge Management) Lab University of Genoa, based on the Topic Map model and build over Wandora.
+Developed in the ELKM(E-Learning Knowledge Management) Lab University of Genoa, based on the Topic Map model, ENCODE is a fork of Wandora project (https://github.com/wandora-team/wandora).
